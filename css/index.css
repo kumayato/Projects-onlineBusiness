@@ -1,0 +1,174 @@
+/*中间主题部分开始*/
+/*轮播图和右侧信息栏*/
+.mian-content {
+    position: relative;
+}
+.slider {
+    width: 730px;
+    height: 453px;
+    margin: 12px 0px 0px 220px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider > ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.slider > ul > li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.circle {
+    position: absolute;
+    left: 50%;
+    margin-left: -66px;
+    bottom: 8px;
+}
+.circle ol li{
+    float: left;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    background-color: #3E3E3E;
+    margin: 0 2px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.circle .current {
+    background-color: #B61B1F;
+}
+
+.arrow-prev {
+    position: absolute;
+    left: -299px;
+    top: -238px;
+}
+.arrow-next {
+    position: absolute;
+    right: -299px;
+    top: -238px;
+}
+.arrow a {
+    display: block;
+    width: 28px;
+    height: 62px;
+    color: #fff;
+    font:600 18px/62px "宋体";
+    text-align: center;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.arrow a:hover {
+    background: rgba(0,0,0,.6);
+}
+.arrow1{
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -31px;
+}
+.arrow2{
+    position: absolute;
+    right: 0;
+    top:50%;
+    margin-top: -31px;
+}
+.main-r {
+    float: right;
+    height: 451px;
+    width: 247px;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    margin-top: 12px;
+}
+.main-r-top {
+    height: 200px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.jd-new-h,.life-service-h {
+    height: 43px;
+    line-height: 43px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.jd-new-h h3,.life-service-h h3 {
+    float: left;
+    font: 14px/43px "microsoft yahei";
+    color: #666;
+    padding-left: 15px;
+}
+.jd-new-h a,.life-service-h a {
+    float: right;
+    font:13px/43px "宋体";
+    padding-right: 15px;
+}
+.jd-new-con {
+ padding: 8px 0 0 15px;
+}
+.jd-new-con p {
+    height: 28px;
+    line-height: 28px;
+}
+.jd-new-con span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+.life-service-con {
+    overflow: hidden;
+    height: 206px;
+}
+.life-service-con ul {
+    width: 260px;
+}
+.life-service-con li {
+    float: left;
+    border: 1px solid #e4e4e4;
+    margin-left: -1px;
+    margin-top: -1px;
+    position: relative;
+}
+.life-service-con li a {
+    display: block;
+    width: 61px;
+    height: 25px;
+    padding-top: 44px;
+    position: relative;
+    text-align: center;
+}
+.life-service-con i {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/spriteicon.png) no-repeat top left;
+}
+.song-icon {
+    width: 12px;
+    height: 15px;
+    background: url(../images/song.png);
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+/*轮播图下面小广告*/
+.bargain {
+    position: relative;
+    width: 1220px;
+    overflow: hidden;
+    padding: 10px 0 28px 0;
+}
+.bargain a {
+    display: block;
+    float: left;
+    margin-right: 1px;
+}
+
+

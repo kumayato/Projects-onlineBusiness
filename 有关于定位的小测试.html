@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*定位之间父亲跟父亲的定位相比较，儿子和儿子的定位相比较，越后面的层级越大*/
+        .div1{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .div2 {
+            background-color: hotpink;
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+        .child {
+            background-color: greenyellow;
+            width: 100px;
+            height: 100px;
+
+        }
+        .mask{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="child">
+        我是绿色div的孩子
+    </div>
+</div>
+<div class="mask">
+    <div class="div2"></div>
+</div>
+
+</body>
+</html>

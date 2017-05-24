@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/*css初始化*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }/*为表格设置合并边框*/
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";/*行高是字体的大小*150%*/
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+}
+
+/*头部开始*/
+.topNav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.topNav-left {
+    float: left;
+}
+.topNav-right {
+    float: right;
+}
+
+.topNav-right li {
+    float: left;
+}
+.topNav-right a {
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+}
+.line {
+    height: 12px;
+    width: 1px;
+    background-color: #ddd;
+    margin-top: 9px;
+}
+.topNav-left i,.topNav-right i {
+    height: 7px;
+    width: 15px;
+    display: inline-block;
+    font:400 15px/15px "宋体";
+    position: relative;
+    top: 1px;
+    overflow: hidden;
+}
+.topNav-left s,.topNav-right s {
+    position: absolute;
+    bottom: -1px;
+}
+/*
+相对定位是相对于自己的位置，而绝对定位是相对于定位的父盒子的位置。
+设了相对定位的内联元素要设置宽和高的话，还是要设置display
+*/
+
+/*头部小广告开始*/
+.topbanner {
+    height: 80px;
+    background-color: #8A25C6;
+}
+.topbanner .w {
+    position: relative;
+}
+.close-topbanner {
+    width: 19px;
+    height: 19px;
+    background: url("../images/close.png") no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.close-topbanner:hover {
+    background: url("../images/close.png") no-repeat 0 -19px;
+}
+
+/*头部主体开始*/
+.header {
+    margin-top: 25px;
+}
+.jdLogo {
+    width: 360px;
+    height: 75px;
+    float: left;
+    background: url("../images/logo.png") no-repeat;
+    position: relative;
+}
+.jd-a {
+    display: block;
+    width: 360px;
+    height: 75px;
+    text-indent: -2000em;
+}
+.jdLogo img {
+    position: absolute;
+    top: -16px;
+    right: 11px;
+}
+.search {
+    float: left;
+}
+.input input {
+    width: 450px;
+    height: 32px;
+    border: 2px solid #B61D1D;
+    padding-left: 5px;
+    font: 14px/32px "microsoft yahei";
+    float: left;
+}
+.input button {
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    font: 16px/36px "microsoft yahei";
+    color: #fff;
+    cursor: pointer;
+    float: left;
+}
+.searchHot {
+    float: left;
+    margin-top: 7px;
+}
+.searchHot li {
+    float: left;
+    margin-right: 6px;
+}
+.buyCar {
+    width: 96px;
+    height: 34px;
+    line-height: 34px;
+    float: right;
+    border: 1px solid #DFDFDF;
+    position: relative;
+    padding-left: 43px;
+    margin-right: 65px;
+}
+.buyCar-icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 16px;
+    height: 13px;
+    background:url("../images/sprite.png") no-repeat -1px -59px;
+}
+.buyCar .tips {
+    width: 16px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #C81623;
+    position: absolute;
+    left: 97px;
+    top: -5px;
+    border-radius: 7px 7px 7px 0px;
+}
+
+/*主导航开始*/
+.mianSav {
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+    width: 100%;
+}
+.drop {
+    height: 44px;
+    width: 210px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+.drop h2 a {
+    display: block;
+    height: 44px;
+    background-color: #B1191A;
+    font:400 15px/44px "microsoft yahei";
+    color: #fff;
+    padding-left: 10px;
+    border-bottom: 2px solid #B1191A;
+}
+.dorpmenu {
+    background-color: #C81623;
+}
+.dorpmenu li a {
+    display: block;
+    height: 31px;
+    font: 400 14px/31px "microsoft yahei";
+    color: #fff;
+    padding-left: 10px;
+    border-left: 1px  solid #B61D1D;
+}
+.dorpmenu li a:hover {
+    background-color: #B1191A;
+}
+.dorpmenu span{
+    float: right;
+    padding-right: 15px;
+    font-weight: 600;
+    font-family: "宋体";
+}
+.dorpmenu-content {
+    position: absolute;
+    right: -750px;
+    bottom: -467px;
+    background: #fff;
+    font-size: 14px;
+    font-family: 宋体;
+    height: 465px;
+    width: 750px;
+    z-index: 100;
+    display: none;
+}
+
+.dorpmenu-content > .innerBox {
+    position: absolute;
+    height: 455px;
+    width: 720px;
+    left: 0;
+    top: 0;
+    display: none;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.dorpmenu-content > .current {
+    display: block;
+}
+
+.dorpmenu-content > .innerBox h3 {
+    color: #666;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 50px;
+}
+.dorpmenu-content > .innerBox p {
+    line-height: 40px;
+}
+.dorpmenu-content > .innerBox p > span:not(:first-of-type) {
+    margin-left: 5px;
+    color: #c0c0c0;
+}
+
+.dorpmenu-content > .innerBox p > span.title {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+.middle-sav{
+ float: left;
+}
+.middle-sav li {
+    float: left;
+}
+.middle-sav li a {
+    display: block;
+    height: 44px;
+    padding: 0 20px;
+    font: 400 15px/44px "microsoft yahei";
+    color: #333;
+    cursor: pointer;
+}
+.middle-sav li a:hover{
+    color: #C81623;
+}
+.new {
+    background: url("../images/new.jpg") no-repeat right top;
+}
+.bikeLoge {
+    width: 140px;
+    height: 44px;
+    background: url("../images/bike.jpg") no-repeat;
+    float: right;
+}
+
+/*大背景开始*/
+.bigBanner {
+    position: relative;
+}
+.bigBanner a {
+    height: 603px;
+    width: 100%;
+    background:url("../images/banner.jpg") no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*尾部开始*/
+.JD-fotter {
+    position: relative;
+}
+.slogan {
+    height: 54px;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+}
+.slogan-img img {
+    margin-right: 80px;
+}
+.shopping {
+    height: 188px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.shopping dl {
+    float: left;
+    width: 198px;
+}
+.shopping dt,.map h4 {
+    height: 28px;
+    font: 16px/28px "microsoft yahei";
+    padding-top: 10px;
+}
+.shopping dl {
+    line-height: 20px;
+}
+.map {
+    float: right;
+    width: 210px;
+    height: 165px;
+    background: url(../images/china.png) no-repeat 0 -132px;
+}
+.map p {
+    padding-top: 10px;
+    line-height: 18px;
+}
+.map .p-right {
+    float: right;
+}
+.footer-mess {
+    padding: 20px 0 30px 0;
+    text-align: center;
+}
+.link {
+    height: 25px;
+}
+.link a {
+    padding: 0 6px;
+}
+.footer-mess p {
+    line-height: 18px;
+    margin-bottom: 10px;
+}
